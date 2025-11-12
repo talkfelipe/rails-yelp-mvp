@@ -1,2 +1,9 @@
-<h1>Restaurants#new</h1>
-<p>Find me in app/views/restaurants/new.html.erb</p>
+<div class="container">
+  <div class="border d-flex p-3">
+    <%= link_to restaurants_path do %>
+      <i class="fa-solid fa-house"></i>
+    <% end  %>
+  </div>
+  <h1>Add a Restaurant</h1>
+  <%= render 'form', restaurant: @restaurant %>
+</div>
